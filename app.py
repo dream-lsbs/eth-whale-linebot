@@ -68,10 +68,10 @@ from linebot.models import MessageEvent, TextMessage, TextSendMessage
 app = Flask(__name__)
 
 # 讀環境變數
-LINE_CHANNEL_ACCESS_TOKEN = os.getenv(2007776585)
-LINE_CHANNEL_SECRET = os.getenv(45fbd89f218e1dfebc5d862d3a19b324)
-ETHERSCAN_API_KEY = os.getenv(4M8722YDXJQZ8RU1RJ9JFU19I38C2IGKMK)
-LINE_USER_ID = os.getenv(wucibin)
+LINE_CHANNEL_ACCESS_TOKEN = os.getenv("2007776585")
+LINE_CHANNEL_SECRET = os.getenv("45fbd89f218e1dfebc5d862d3a19b324")
+ETHERSCAN_API_KEY = os.getenv("4M8722YDXJQZ8RU1RJ9JFU19I38C2IGKMK")
+LINE_USER_ID = os.getenv("wucibin")
 
 line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(LINE_CHANNEL_SECRET)
